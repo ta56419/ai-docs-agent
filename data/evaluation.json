@@ -1,0 +1,10 @@
+[
+  {"question":"How many days can I work remotely?","expected_source":"engineering_handbook.md","expected_phrase":"three days each week"},
+  {"question":"Who approves remote work?","expected_source":"engineering_handbook.md","expected_phrase":"manager's approval"},
+  {"question":"What are the core availability hours?","expected_source":"engineering_handbook.md","expected_phrase":"10:00-15:00"},
+  {"question":"How do I request client environment access?","expected_source":"engineering_handbook.md","expected_phrase":"service desk"},
+  {"question":"What should I do after a suspected security incident?","expected_source":"engineering_handbook.md","expected_phrase":"on-call engineer"},
+  {"question":"What is required before a pull request can be merged?","expected_source":"engineering_handbook.md","expected_phrase":"one reviewer approval"},
+  {"question":"How much is the annual learning budget?","expected_source":"engineering_handbook.md","expected_phrase":"2,000 PLN"},
+  {"question":"Can I commit customer data?","expected_source":"engineering_handbook.md","expected_phrase":"Do not commit credentials or customer data"}
+]
