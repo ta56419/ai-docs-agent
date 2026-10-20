@@ -14,7 +14,12 @@ def main() -> None:
     passed = 0
     for case in CASES:
         hits = kb.search(case["question"], top_k=3)
-        found = any(hit.source == case["expected_source"] and case["expected_phrase"].casefold() in hit.content.casefold() for hit in hits)
+        found = any(
+            hit.source == case["expected_source"]
+            and hit.title == case["expected_title"]
+            and case["expected_phrase"].casefold() in hit.content.casefold()
+            for hit in hits
+        )
         passed += int(found)
         print(f"{'PASS' if found else 'FAIL'} | {case['question']} | expected {case['expected_source']}")
     print(f"\nRetrieval hit@3: {passed}/{len(CASES)} ({passed / len(CASES):.0%})")

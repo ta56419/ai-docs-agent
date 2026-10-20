@@ -15,8 +15,3 @@ Open a pull request for every change. A change needs one reviewer approval and p
 ## Deployment
 Production deployments happen through the CI/CD pipeline after review. Do not deploy directly from a developer laptop. For a failed deployment, notify the on-call engineer and follow the rollback runbook.
 
-## Learning budget
-Each employee has an annual learning budget of 2,000 PLN. Discuss the course or certification with your manager before purchasing it, then submit the receipt through the expense system.
-
-## Data handling
-Use synthetic or anonymized data in development and testing. Store secrets in the approved secret manager. Do not commit credentials or customer data to source control.
